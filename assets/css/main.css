@@ -1540,7 +1540,7 @@ input, select, textarea {
 
 		header > p {
 			display: block;
-			font-style: italic;
+			font-style: bold;
 			margin: 0.5em 0 0 0;
 			padding-bottom: 0.5em;
 		}
@@ -2068,14 +2068,14 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 3em 0 3em 0;
 		text-align: center;
 	}
 
 		#header h1 {
 			color: #252122;
 			font-weight: 900;
-			font-size: 2.5em;
+			font-size: 3em;
 			letter-spacing: -0.035em;
 			line-height: 1;
 		}
@@ -2092,7 +2092,7 @@ input, select, textarea {
 
 			#nav > ul > li {
 				display: inline-block;
-				font-style: italic;
+				font-style: bold;
 				margin: 0 0.35em 0 0.35em;
 			}
 
@@ -2102,7 +2102,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #d52349;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2126,12 +2126,12 @@ input, select, textarea {
 		border-radius: 5px;
 		background-color: #252122;
 		background-color: rgba(34, 30, 31, 0.98);
-		padding: 1.25em 1.5em 1.25em 1.5em;
-		font-style: italic;
+		padding: 1em;
+		font-style: bold;
 		min-width: 13em;
 		box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
 		text-align: left;
-		margin-top: -1.25em;
+		margin-top: -1.6em;	
 		margin-left: -1px;
 		list-style: none;
 	}
@@ -2173,9 +2173,9 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../images/paulytita.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -2267,7 +2267,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		background: #f7f7f7 url("images/bg02.png");
-		padding: 4em 0 4em 0;
+		padding: 0em 0 4em 0;
 	}
 
 		#main:before {
@@ -2284,6 +2284,7 @@ input, select, textarea {
 
 		#main .major h2 {
 			background: #f7f7f7 url("images/bg02.png");
+			font-size: 40px;
 		}
 
 /* Footer */
@@ -2749,7 +2750,7 @@ input, select, textarea {
 			}
 
 			header {
-				margin: 0 0 1em 0;
+				margin: 0 0 0.5em 0;
 			}
 
 			footer {
@@ -2845,7 +2846,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0;
+				padding: 1em 0;
 			}
 
 				#header h1 {
