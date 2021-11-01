@@ -285,7 +285,7 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 50%;
 		}
 
 		.row > .off-4 {
@@ -528,7 +528,7 @@ input, select, textarea {
 				}
 
 				.row > .col-4-xlarge {
-					width: 33.33333%;
+					width: 13.33333%;
 				}
 
 				.row > .off-4-xlarge {
@@ -1571,7 +1571,7 @@ input, select, textarea {
 	.box {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 2.75em 1.75em 2.75em 1.75em;
+		padding: 2.75em 1em 1em 1.75em;
 	}
 
 		.box .image.featured {
@@ -1579,12 +1579,11 @@ input, select, textarea {
 			width: auto;
 			left: 1.75em;
 			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
+			margin: -4.5em 0 2.25em -3.5em;
 		}
 
 		.box.post header {
-			padding-top: 1em;
-			margin: 0 0 2em 0;
+			margin: 0 0 0em 0;
 		}
 
 		.box.post h2 {
@@ -1597,8 +1596,31 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 
+		.box header
+		{
+			display: flex;
+		}
+
 		.box footer ul.actions {
 			margin-bottom: 0;
+		}
+
+		.box footer ul.actions {
+			margin-bottom: 0;
+		}
+		
+		.box header .platforms {
+			display: inline;
+			margin-left: auto;
+			margin-right: 0;
+		}
+
+		.box header .platforms img {
+			display: inline-block;
+			outline: 0;
+			height: 1.5em;
+			padding-left: 0.5em;
+			width: auto;
 		}
 
 /* Button */
@@ -1618,9 +1640,10 @@ input, select, textarea {
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
-		font-size: 1.1em;
-		padding: 0.65em 1.5em 0.65em 1.5em;
+		font-size: .9em;
+		padding: 0.3em 1em;
 		text-align: center;
+		margin: 0em -0.4em;
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -1656,7 +1679,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #353132;
+				background: #e53359;
 			}
 
 			input[type="button"].alt:active,
@@ -2184,7 +2207,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: rgba(34, 30, 31, 0.85);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2198,7 +2221,7 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #d83256;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -2469,11 +2492,12 @@ input, select, textarea {
 
 			.box footer ul.actions li {
 				margin: 1em 0 0 0;
-				display: block;
+				display: inline;
 			}
 
 				.box footer ul.actions li .button {
-					width: 100%;
+					width: 32%;
+					margin-right: 0.5em;
 				}
 
 				.box footer ul.actions li:first-child {
