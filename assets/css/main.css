@@ -2094,6 +2094,11 @@ input, select, textarea {
 		padding: 3em 0 3em 0;
 		text-align: center;
 	}
+		/* #header .falopa
+		{
+			width: 100%;
+			border: 1px solid #000;
+		} */
 
 		#header h1 {
 			color: #252122;
@@ -2101,6 +2106,39 @@ input, select, textarea {
 			font-size: 3em;
 			letter-spacing: -0.035em;
 			line-height: 1;
+		}
+		
+		#header .social {
+			position: absolute;
+			display: inline;
+			right:0;
+			margin-right: 5%;
+		}
+
+		#header .social a img {
+			display: inline-block;
+			outline: 0;
+			height: 2.7em;
+			margin-right: 0.2em;
+			border-radius: 20%;
+			padding: 0.5em;
+			width: auto;
+			filter: invert(23%) sepia(34%) saturate(4888%) hue-rotate(327deg) brightness(96%) contrast(100%);
+		}
+
+		#header .social a
+		{
+			padding-top: 1.75em;
+			border-radius: 25%;
+		}
+		
+		#header .social a:hover {
+			background-color: #d52349;
+			transition: 0.2s;
+		}
+		
+		#header .social a:hover img {
+			filter: invert(100%) sepia(0%) saturate(9%) hue-rotate(193deg) brightness(104%) contrast(103%);
 		}
 
 /* Nav */
