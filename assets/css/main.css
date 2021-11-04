@@ -1800,6 +1800,41 @@ input, select, textarea {
 				margin-left: 0;
 			}
 
+/* About */
+
+	#about
+	{
+		display: inline;
+	}
+
+	#about .imgcontainer {
+		position: relative;
+		width: auto;
+		margin: auto 0;
+		display: flex;
+		justify-content: center;
+	}
+	#about .imgcontainer img {
+		position: relative;
+		width: 20em;
+		height:20em;
+		border-radius: 100%;
+	}
+
+	.something
+	{
+		display: table;
+		height: 100%;
+		text-align: center;
+		font-size: 1.3em;
+	}
+
+	.something p
+	{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
 /* Contact */
 
 	ul.contact {
@@ -2133,12 +2168,8 @@ input, select, textarea {
 		}
 		
 		#header .social a:hover {
-			background-color: #d52349;
+			background-color: #eaeaea;
 			transition: 0.2s;
-		}
-		
-		#header .social a:hover img {
-			filter: invert(100%) sepia(0%) saturate(9%) hue-rotate(193deg) brightness(104%) contrast(103%);
 		}
 
 /* Nav */
@@ -2174,7 +2205,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					background: #eaeaea;
 				}
 
 				#nav > ul > li.current > a {
@@ -2234,7 +2265,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../images/paulytita.jpg");
+		background: #CCE8F4 url("../../images/banner2.jpg");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -2245,7 +2276,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.85);
+			background-color: rgba(34, 30, 31, 0.95);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2398,8 +2429,12 @@ input, select, textarea {
 /* Copyright */
 
 	#copyright {
+		background-color: #252122;
 		text-align: center;
-		margin: 3em 0 2em 0;
+		margin: 3em 0 0em 0;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
 	}
 
 		#copyright ul.links {
@@ -2408,6 +2443,7 @@ input, select, textarea {
 			background: rgba(255, 255, 255, 0.05);
 			border-radius: 5px;
 			margin: 0;
+			width: 60%;
 			padding: 0.85em 2.25em 0.85em 2.25em;
 		}
 
