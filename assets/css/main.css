@@ -288,6 +288,10 @@ input, select, textarea {
 		.row > .col-4 {
 			width: 50%;
 		}
+		
+		.row > .col-4-sidebar {
+			width: 30%;
+		}
 
 		.row > .off-4 {
 			margin-left: 33.33333%;
@@ -318,7 +322,7 @@ input, select, textarea {
 		}
 
 		.row > .col-8 {
-			width: 66.66667%;
+			width: 65%;
 		}
 
 		.row > .off-8 {
@@ -1577,10 +1581,8 @@ input, select, textarea {
 
 		.box .image.featured {
 			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 2.25em -3.5em;
+			width: 109%;
+			margin: -4.5em 1.8em 2.25em -1.8em;
 		}
 
 		.box.post header {
@@ -2157,7 +2159,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		margin: 2.5em 0 0 0;
+		margin: 2.5em 0 1em 0;
 	}
 
 		#nav > ul {
@@ -2255,7 +2257,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: 2.5em 0 0 0;
 	}
 
 		#banner header {
