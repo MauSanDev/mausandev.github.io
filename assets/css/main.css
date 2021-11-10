@@ -1630,6 +1630,14 @@ input, select, textarea {
 		{
 			padding-bottom: 0.5em;
 		}
+		
+		.box.post h5
+		{
+			font-size: 0.7em;
+			margin:0;
+			padding:0;
+			color: #545454;
+		}
 
 		.box.post ul
 		{
