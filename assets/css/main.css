@@ -9,7 +9,7 @@
 
 :root
 {
-	--bgdarkest: #12151a;
+	--bgdarkest: #1c2129;
 	--bgdark: #222831;
 	--bgcolor: #393E46;
 	--bgcolorclear: #EEEEEE;
@@ -1689,16 +1689,28 @@ input, select, textarea {
 
 	.projectcontainer .data header
 	{
-		padding:0;
+		padding:0 0 0.5em 0;
 		margin:0;
 	}
 
 	.projectcontainer .data ul
 	{
-		list-style: none;
 		display: inline;
-		margin:0;
-		padding:0;
+		margin:0 auto;
+		padding:0 auto;
+	}
+	
+	.projectcontainer .data ul a
+	{
+		font-weight: bold;
+		text-decoration: none;
+		color: var(--maindark);
+	}
+	
+	.projectcontainer .data ul a:hover
+	{
+		text-decoration: none;
+		color: var(--maincolor);
 	}
 
 
@@ -1813,11 +1825,11 @@ input, select, textarea {
 
 	.something
 	{
-		width: 100%;
+		width: 60%;
 		height: 100%;
 		text-align: center;
 		font-size: 1.3em;
-		padding:1.5em 4em 1.5em 1.5em;
+		padding:4em 6em;
 	}
 	
 
@@ -2096,26 +2108,26 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-color: var(--bgdark);
-		border-bottom: solid 1px #444;
+		background-color: var(--bgdarkest);
 		display: flex;
 		text-align: center;
 		padding-bottom: 0;
 		margin-bottom: 0;
+		max-height: 20em;
 	}
 
 		#header video
 		{
 			border: 1px solid #444;
 			width: 28%;
-			height: 23em;
+			height: 20em;
 			overflow: hidden;
 		}
 
 		#header .data
 		{
 			width: 72%;
-			padding: 3em 0 1em 0;
+			padding: 3em 0em 1em 0;
 		}
 		#header h1 {
 			color: #ffffff;
@@ -2183,10 +2195,10 @@ input, select, textarea {
 	.navcontainer
 	{
 		width: 100%;
-		border-bottom: 1px solid #444;
 		text-align: center;
-		background-color: var(--bgdarkest);
-		height: 2em;
+		background-color: var(--bgdark);
+		padding:0.6em;
+		height: 3em;
 	}
 
 		#nav > ul {
@@ -2610,13 +2622,6 @@ input, select, textarea {
 
 		/* Footer */
 
-			#footer {
-				padding: 3em 0;
-			}
-
-				#footer:before {
-					height: 2.5em;
-				}
 
 				#footer header {
 					margin: 0 0 1.5em 0;
@@ -2880,15 +2885,20 @@ input, select, textarea {
 			}
 
 			body.navPanel-visible #navPanel {
+				background-color: var(--bgdark);
 				-moz-transform: translateX(0);
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
 			}
 
+			#About
+			{
+				width: 100%;
+			}
+
 
 			#About .profileimage {
-				width: 100%;
 				margin: 0 auto;
 				display: block;
 				text-align: center;
@@ -2896,12 +2906,13 @@ input, select, textarea {
 		
 			#About .profileimage img
 			{
-				height: 35em;
+				width: 100%;
+				max-height: 100%;
 			}
 			
 			#footer .something
 			{
-				width: 50%;
+				width: 100%;
 			}
 
 			#footer .something h2
@@ -3122,38 +3133,31 @@ input, select, textarea {
 					}
 
 		
-	#header .social 
-	{
-		margin: 1em auto;
-	}
+			#header .social {
+				position: relative;
+				margin: 0 auto;
+				top: 0.5em;
+			}
 
-	#header .social a img {
-		display: inline-block;
-		outline: 0;
-		height: 1em;
-		border-radius: 20%;
-		padding: 0;
-		width: auto;
-		filter: invert(100%) sepia(0%) saturate(3319%) hue-rotate(139deg) brightness(123%) contrast(109%);
-		margin:0;
-	}
+			#header .social a img {
+				display: inline-block;
+				outline: 0;
+				height: 1.75em;
+				border-radius: 20%;
+				padding: 0.25em;
+				width: auto;
+			}
 
-	#header .social a
-	{
-		background: none;
-		padding-top: 0.3em;
-		border-radius: 25%;
-	}
-	
-	#header .social a:hover {
-		background-color: #ffffff;
-		margin:0;
-		transition: 0.2s;
-	}
-	
-	#header .social a:hover img {
-		filter: invert(23%) sepia(49%) saturate(3405%) hue-rotate(327deg) brightness(95%) contrast(100%);
-	}
+			#header .social a
+			{
+				padding-top: 1.6em;
+				border-radius: 25%;
+			}
+			
+			#header .social a:hover {
+				background-color: #eaeaea;
+				transition: 0.2s;
+			}
 					
 
 		/* Main */
