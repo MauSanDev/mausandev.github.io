@@ -118,7 +118,6 @@ input, select, textarea {
 	}
 
 	strong, b {
-		color: #ffffff;
 		font-weight: 400;
 	}
 
@@ -145,7 +144,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: var(--textcolor);
 		font-weight: 700;
 		font-family: "Merriweather Sans";
 	}
@@ -1379,15 +1378,21 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #292627;
+		background: #fff;
 		border-bottom: solid 1px #444;
-		padding: 2.75em 1em 1em 1.75em;
+		padding: 0 0 3em 0;
+		margin:0.7em;
+		box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.05);
 	}
 
 		.box .image.featured {
 			position: relative;
-			width: 109%;
-			margin: -4.5em 1.8em 2.25em -1.8em;
+			width: 100%;
+		}
+
+		.box.post
+		{
+			padding:1em 2.5em;
 		}
 
 		.box.post header {
@@ -1472,6 +1477,22 @@ input, select, textarea {
 		{
 			margin-bottom: 0;
 			line-height: 1.5em;
+		}
+		
+		.box.sidebar
+		{
+			padding: 1em 2.5em;
+		}
+		
+		.box.sidebar .button
+		{
+			background-color: var(--maindark);
+		}
+		.box.sidebar img.profile
+		{
+			margin: -1em -2.5em;
+			width: 129%;
+			padding-bottom: 1.5em;
 		}
 
 		.box.sidebar header
