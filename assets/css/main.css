@@ -2114,7 +2114,11 @@ input, select, textarea {
 		padding-bottom: 0;
 		margin-bottom: 0;
 		max-height: 20em;
+		background: url(../../images/banner2.jpg);
+		background-position: center;
+		background-size: cover;
 	}
+
 
 		#header video
 		{
@@ -2126,7 +2130,8 @@ input, select, textarea {
 
 		#header .data
 		{
-			width: 72%;
+			background-color: rgba(0, 0, 0, 0.75);
+			width: 100%;
 			padding: 3em 0em 1em 0;
 		}
 		#header h1 {
@@ -2139,8 +2144,9 @@ input, select, textarea {
 		}
 		#header h2 {
 			color: #ffffff;
-			padding-bottom: 0.5em;
+			padding: 0.5em;
 			font-family: 'Source Sans Pro';
+			font-size: 2em;
 			color: #ccc;
 			font-style: normal;
 			font-weight: normal;
@@ -2164,32 +2170,35 @@ input, select, textarea {
 			transition: 0.2s;
 		}
 		
-		#header .social {
-			display: inline;
+		#header .social 
+		{
+			margin: 1em auto;
 		}
 
 		#header .social a img {
 			display: inline-block;
 			outline: 0;
-			height: 2.7em;
-			margin-right: 0.2em;
+			height: 2.3em;
 			border-radius: 20%;
-			padding: 0.5em;
+			padding: 0 0.3em;
 			width: auto;
-			filter: invert(23%) sepia(34%) saturate(4888%) hue-rotate(327deg) brightness(96%) contrast(100%);
+			filter: invert(100%) sepia(0%) saturate(3319%) hue-rotate(139deg) brightness(123%) contrast(109%);
+			margin:0;
 		}
 
 		#header .social a
 		{
-			padding-top: 1.75em;
+			background: none;
+			padding-top: 1.65em;
 			border-radius: 25%;
 		}
 		
 		#header .social a:hover {
-			background-color: #eaeaea;
+			background-color: var(--maincolor);
+			margin:0;
 			transition: 0.2s;
 		}
-
+	
 /* Nav */
 
 	.navcontainer
@@ -2218,18 +2227,20 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: var(--maincolor);
+					color: var(--bgcolorclear);
 					text-decoration: none;
+					font-weight: bold;
 					padding: 0.3em 0.6em;
-					-moz-transition: background-color .25s ease-in-out;
-					-webkit-transition: background-color .25s ease-in-out;
-					-ms-transition: background-color .25s ease-in-out;
-					transition: background-color .15s ease-in-out;
+					-moz-transition: background-color .1s ease-in-out;
+					-webkit-transition: background-color .1s ease-in-out;
+					-ms-transition: background-color .1s ease-in-out;
+					transition: background-color .1s ease-in-out;
 					outline: 0;
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #eaeaea;
+					background:var(--maincolor);
+					color: #000;
 				}
 
 				#nav > ul > li.current > a {
@@ -2238,53 +2249,6 @@ input, select, textarea {
 					font-weight: 700;
 				}
 
-	.dropotron {
-		border-radius: 5px;
-		background-color: var(--bgcolor);
-		background-color: rgba(34, 30, 31, 0.98);
-		padding: 1em;
-		font-style: bold;
-		min-width: 13em;
-		box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
-		text-align: left;
-		margin-top: -1.6em;	
-		margin-left: -1px;
-		list-style: none;
-	}
-
-		.dropotron a, .dropotron span {
-			color: #bbb;
-			text-decoration: none;
-			-moz-transition: color .15s ease-in-out;
-			-webkit-transition: color .15s ease-in-out;
-			-ms-transition: color .15s ease-in-out;
-			transition: color .15s ease-in-out;
-		}
-
-		.dropotron li {
-			padding: 0.25em 0 0.25em 0;
-		}
-
-			.dropotron li:hover > a, .dropotron li:hover > span {
-				color: #fff;
-			}
-
-		.dropotron.level-0 {
-			margin-top: 2em;
-		}
-
-			.dropotron.level-0:before {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 50%;
-				margin-left: -10px;
-				top: -9px;
-				border-left: solid 10px transparent;
-				border-right: solid 10px transparent;
-				border-bottom: solid 10px #252122;
-				border-bottom-color: rgba(34, 30, 31, 0.98);
-			}
 
 /* Banner */
 
@@ -2521,14 +2485,11 @@ input, select, textarea {
 	}
 	
 	#footer .social a:hover {
-		background-color: #ffffff;
+		background-color:var(--maincolor);
 		margin:0;
 		transition: 0.2s;
 	}
-	
-	#footer .social a:hover img {
-		filter: invert(23%) sepia(49%) saturate(3405%) hue-rotate(327deg) brightness(95%) contrast(100%);
-	}
+
 
 /* Copyright */
 
