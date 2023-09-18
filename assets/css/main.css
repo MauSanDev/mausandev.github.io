@@ -12,8 +12,8 @@
 	--bgdarkest: #1c2129;
 	--bgdark: #222831;
 	--bgcolor: #393E46;
-	--bgcolorclear: #EEEEEE;
-	--maincolor: #00ADB5;
+	--bgcolorclear: #1c1c1c;
+	--maincolor: #008b91;
 	--maindark: #089097;
 	--textcolor: #000;
 }
@@ -1379,7 +1379,6 @@ input, select, textarea {
 
 	.box {
 		background: #fff;
-		border-bottom: solid 1px #aaa;
 		padding: 0 0 3em 0;
 		margin:0.7em;
 		box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.05);
@@ -1644,19 +1643,25 @@ input, select, textarea {
 	{
 		padding: 0;
 		margin:1em;
-		box-shadow: 0.3em 0.3em 5px 1px rgba(0, 0, 0, 0.1);
-		background-color: #f5f5f5;
+		box-shadow: 0.3em 0.3em 5px 1px rgba(0, 0, 0, 0.3);
+		background-color: #333;
+		border-radius: 15px;
+	}
+
+	.projectcontainer .projectimg
+	{
+		border-radius: 15px 15px 0 0;
 	}
 
 	.projectcontainer .data
 	{
 		padding: 0.5em 1em;
-		color: rgb(48, 48, 48);
+		color: #fff;
 	}
 	
 	.projectcontainer .data header h3
 	{
-		color: #000;
+		color: #fff;
 	}
 
 	.projectcontainer .data header
@@ -2225,6 +2230,7 @@ input, select, textarea {
 					-ms-transition: background-color .1s ease-in-out;
 					transition: background-color .1s ease-in-out;
 					outline: 0;
+					color: #fff;
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
